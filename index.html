@@ -28,7 +28,23 @@
 </style>
 <body>
     
+<div class="container">
+  <h1>some commands</h1>   
+  <div class="statement">
+    <span class="key">touch </span>
+    <span class="value">to create file</span>
+  </div>
+  <div class="statement">
+    <span class="key">cat </span>
+    <span class="value">to show file</span>
+  </div>
+  <div class="statement">
+    <span class="key">mkdir </span>
+    <span class="value">to create folder</span>
+  </div>
+ 
 
+</div>
 <div class="container">
   <h1>Most used git commands</h1>   
   <div class="statement">
@@ -46,6 +62,10 @@
   <div class="statement">
     <span class="key">git push</span>
     <span class="value">Push the changes to the remote repository</span>
+  </div>
+  <div class="statement">
+    <span class="key">git push -u origin master</span>
+    <span class="value">Pull and Push the changes to the remote repository</span>
   </div>
   <div class="statement">
     <span class="key">git pull</span>
@@ -71,6 +91,24 @@
     <span class="key">git log</span>
     <span class="value">Show commit logs</span>
   </div>
+  <div class="statement">
+    <span class="key">git config --global alies.cm "commit -m"</span>
+    <span class="value">when run (git cm) will run git commit -m</span>
+  </div>
+  <div class="statement">
+    <span class="key">git config --global alies.cm </span>
+    <span class="value">will return cm shortcut value</span>
+  </div>
+  <div class="statement">
+    <span class="key">git config --global edit </span>
+    <span class="value">will open config file</span>
+  </div>
+</div>
+<div>
+    <h1>How to generate public key and authenticate with GitHub</h1>
+  <p>To generate a public key, you need to use the ssh-keygen command. This will create a pair of files in your ~/.ssh directory: id_rsa (private key) and id_rsa.pub (public key).</p>
+  <p>To authenticate with GitHub, you need to copy the contents of your id_rsa.pub file and paste it into your GitHub account settings under SSH and GPG keys. Then, you can use the ssh -T git@github.com command to test your connection.</p>
+  <p>For more details, you can visit the official GitHub documentation: https://docs.github.com/en/authentication/connecting-to-github-with-ssh</p>
 </div>
     
 </body>
