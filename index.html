@@ -59,9 +59,22 @@
     <span class="key">git commit</span>
     <span class="value">Record changes to the repository</span>
   </div>
+
   <div class="statement">
     <span class="key">git reset</span>
     <span class="value">reset commited file</span>
+  </div>
+  <div class="statement">
+    <span class="key">git restore --staged *</span>
+    <span class="value">undo from (git add) command</span>
+  </div>
+  <div class="statement">
+    <span class="key">git clean -n</span>
+    <span class="value">check removing uncommited new files </span>
+  </div>
+  <div class="statement">
+    <span class="key">git clean -f</span>
+    <span class="value">removing uncommited new files </span>
   </div>
   <div class="statement">
     <span class="key">git push</span>
@@ -114,6 +127,50 @@
   <div class="statement">
     <span class="key">git merge dev</span>
     <span class="value">merge current branch with dev</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash</span>
+    <span class="value">need git add first , move current edits to temp stash</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash save "message"</span>
+    <span class="value">need git add first , move current edits to temp stash with custom message</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash list</span>
+    <span class="value">get stash list</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash pop</span>
+    <span class="value">remove edits from stash to current branch</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash pop stash@{0}</span>
+    <span class="value">remove edits with the index 0 from stash</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash apply</span>
+    <span class="value">send edits from stash to current branch without removing from stash</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash drop</span>
+    <span class="value">destroy last stack element edits in stash  </span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash drop stash@{0}</span>
+    <span class="value">destroy edits with index 0 in stash </span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash show</span>
+    <span class="value">show info about stash</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash show stash{0}</span>
+    <span class="value">show info about stash with index 0</span>
+  </div>
+  <div class="statement">
+    <span class="key">git stash clear</span>
+    <span class="value">clear stash</span>
   </div>
   <div class="statement">
     <span class="key">git log</span>
